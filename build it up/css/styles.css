@@ -13,7 +13,7 @@ body {
 }
 
 #logo-img {
-  background: url('../images/img.png') no-repeat;
+  background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -46,6 +46,7 @@ body {
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
+
 #nav-list {
   margin-top: 10px;
 }
@@ -80,3 +81,5 @@ body {
   clear: both;
   margin-top: -30px;
 }
+/* END HEADER */
+
