@@ -89,7 +89,7 @@ body {
 }
 #menu-tile, #specials-tile, #map-tile{
 	height:250px;
-	width: 100px;	
+	width: 100%;	
 	margin-bottom: 15px;
 	position: relative;
 	border: 2px solid #3F0C1F;
@@ -97,6 +97,27 @@ body {
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
 	box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+
+#menu-tile{
+	background: url('../images/menu.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile{
+	background: url('../images/specials.jpg') no-repeat;
+	background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -183,7 +204,21 @@ body {
 	padding: 0px;
 	
 }
-
-
+#menu-tile, #specials-tile{
+	width: 360px;
+	margin:0 auto 15px;
 }
 
+}
+/**********Super  Extra small devices only(E.g:iphone4) **********/
+@media(max-width: 479px){
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#menu-tile, #specials-tile{
+		width: 280px;
+		margin:0 auto 15px;
+		
+	}
+}
